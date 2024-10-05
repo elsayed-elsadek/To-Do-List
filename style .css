@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.content {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 50px;
+}
+
+.input {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input input {
+    border: 2px solid #ccc;
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    flex: 1;
+    margin-right: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input input:focus {
+    border-color: tomato;
+}
+
+.input button {
+    background-color: tomato;
+    border: none;
+    padding: 0.8rem 2rem;
+    color: #fff;
+    border-radius: 20rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input button:hover {
+    background-color: darkred;
+}
+
+.todo-list {
+    margin-top: 20px;
+}
+
+.mission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.mission img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.mission .todo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.mission .todo h3 {
+    color: #333;
+    cursor: pointer;
+    margin: 0;
+}
+
+.mission .todo h3.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.edit {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.edit button {
+    background-color: tomato;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit button:hover {
+    background-color: darkred;
+}
+
+.delete-img {
+    cursor: pointer;
+}
+
+.notification {
+    display: none;
+    font-weight: bold;
+    color: #fff;
+    background-color: tomato;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.notification.show {
+    display: block;
+    animation: fadeInOut 3s ease;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+
+@media (max-width: 480px) {
+    .content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .content .input input {
+        padding: 0.75rem 1rem;
+    }
+
+    .content .input button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .content .header img {
+        width: 40px;
+    }
+    
+
+    .notification {
+        width: 100%; 
+    }
+}
+

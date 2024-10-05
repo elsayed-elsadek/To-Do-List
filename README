@@ -1,0 +1,24 @@
+# To-Do List
+
+A simple and interactive To-Do List web application built using **HTML**, **CSS**, and **JavaScript (ES6)**. The app allows users to manage their daily tasks efficiently.
+
+## Features
+
+- Add new tasks.
+- Delete tasks.
+- Mark tasks as completed.
+- Responsive design for all screen sizes.
+- Persistent task data with **localStorage**.
+-  Show notification messages when successfully adding, deleting, or editing tasks.
+
+## Technologies Used
+
+- **HTML5**: For the structure of the web page.
+- **CSS3**: For styling and layout.
+- **JavaScript (ES6)**: For dynamic task management.
+
+## How to Run
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/elsayed-elsadek/todo-list.git
